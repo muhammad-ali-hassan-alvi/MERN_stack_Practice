@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+
+    <style>
+        header {
+            margin-top: 20px;
+        }
+
+        .logo img {
+            height: 48px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right ul {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            display: flex;
+            gap: 44px;
+        }
+
+        .right ul li {
+            cursor: pointer;
+        }
+
+        .container-center {
+            /* background-color: aqua; */
+            margin: auto;
+            height: fit-content;
+            width: 80vw;
+            text-align: center;
+            /* display: flex;
+            justify-content: center;  */
+            /* align-items: center; */
+        }
+
+        .container-center .content {
+            font-size: 48px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .content-subcontent {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+
+        .container-center .btn button {
+            border: none;
+            /* background-color: white; */
+        }
+
+        .container-center .btn button a {
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 12px 20px;
+            background-color: #00B6D1;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .grid {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .grid .grid-heading-image {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            /* Controls the space between img and p */
+            margin-bottom: 40px;
+        }
+
+        .grid .grid-heading-image img {
+            height: 70px;
+            /* flex-shrink: 0; */
+            /* Ensures the image doesn't shrink */
+        }
+
+        /* .grid .grid-heading-image p {
+            margin: 50;
+
+            /* text-align: left;
+        } */
+
+        .container-grid .item {
+            display: flex;
+            height: fit-content;
+            /* width: fit-content; */
+            background-color: #F9F9F9;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            flex-direction: column;
+            max-width: 290px;
+            margin-bottom: 16px;
+            /* Add space below each item */
+        }
+
+        .container-grid .item button {
+            background-color: #5CB85C;
+            border-radius: 7px;
+            padding: 8px 16px;
+            border: #5CB85C;
+        }
+
+
+
+        .container-grid {
+            max-width: 75vw;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Three items per row by default */
+            gap: 20px;
+            /* Space between items */
+        }
+
+        @media (max-width: 768px) {
+            .container-grid {
+                grid-template-columns: 1fr;
+                /* One item per row on smaller screens */
+            }
+
+            .container-grid .item {
+                justify-self: center;
+                /* Center the item horizontally */
+            }
+        }
+
+
+
+
+        .container-grid .item a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+
+        }
+
+        .container-grid .item p {
+            /* color: white; */
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 8px;
+            /* font-weight: 600; */
+
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="UE-Logo-1.webp" alt="">
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                    <li>Security Compliance</li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-center">
+        <p class="content">Download <strong style="font-weight: 800;">UltraEdit</strong> for Windows</p>
+        <div>
+            <h3 class="content-subcontent">Download and try UltraEdit before you buy it! This download includes the full
+                Windows version of the text editor.</h3>
+        </div>
+
+        <div class="btn">
+            <button>
+                <a href="ue_english_64.exe">Download Mac or Linux</a>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="grid">
+        <div class="grid-heading-image">
+            <img src="ultra-edit.png" alt="">
+            <p> <span style="font-size: 24px">Download UltraEdit</span> v2024.0(released 2024-04-19) | Hotfix</p>
+        </div>
+
+    </div>
+
+    <div class="container-grid">
+        <div class="item item1">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item2">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item3">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item4">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item5">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item6">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item7">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item8">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item9">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+        <div class="item item10">
+            <h3>English</h3>
+            <button><a href="ue_english_64.exe">Download 64-Bit</a></button>
+            <p>AA32582D4736B5A5CB3C4D57C670C8BCDE76C1F93058EB8BAC11AB8DC5C08EB2</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

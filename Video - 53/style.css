@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* CSS For MAIN AND its Components */
+
+.main {
+    /* display: flex; */
+    background-image: url("assests/images/bg.jpg");
+    min-height: 90vh;
+    /* Full viewport height */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2200px, 100vw);
+    position: relative;
+    /* justify-content: center; */
+
+}
+
+
+.main .box {
+    width: 100%;
+    height: 100%;
+    /* Adjust height to match the parent */
+    opacity: 0.54;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    width: 60vw;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 770px;
+    padding: 30px 0px;
+
+}
+
+.main nav img {
+    width: 9.2rem;
+    height: 2.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.main nav .navbutton button {
+    width: 100px;
+    height: 2.8rem;
+    background-color: rgb(254, 23, 23);
+    color: aliceblue;
+    font-weight: 900;
+    border: 2px solid rgb(254, 23, 23);
+    position: relative;
+    z-index: 10;
+    border-radius: 6px;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically centers the content */
+    align-items: center;
+    /* Horizontally centers the content */
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 29px;
+    padding: 30px;
+    text-align: center;
+    width: auto;
+    /* Or remove this line entirely */
+    /* max-width: 100%; Ensure it doesn't exceed the viewport width */
+}
+
+.hero> :first-child {
+    width: 70vw;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero .redbtn button {
+    background-color: red;
+    padding: 12px 20px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero .redbtn input {
+    background-color: rgb(37, 37, 37);
+    padding: 24px 16px;
+    /* font-family: "Martel Sans", sans-serif; */
+    /* font-weight: 700; */
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    width: 370px;
+
+}
+
+/* CSS for Separators */
+.seperation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    padding-bottom: 10px;
+}
+
+/* Enjoy your TV Section */
+
+.enjoy {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.enjoy .enjoy-content {
+    width: 600px;
+}
+
+.enjoy .enjoy-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+}
+
+.enjoy .enjoy-content p {
+    color: white;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+}
+
+.enjoy .enjoy-content img {
+    color: white;
+    height: 400px;
+    width: 600px;
+}
+
+
+
+/* Download Section Styling */
+
+.download {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.download .download-content {
+    width: 600px;
+}
+
+.download .download-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+}
+
+.download .download-content p {
+    color: white;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+}
+
+.download .download-content img {
+    color: white;
+    height: 400px;
+    width: 600px;
+}
+
+/* Watch Everywhere Section */
+.watch {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.watch .watch-content {
+    width: 400px;
+}
+
+.watch .watch-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+}
+
+.watch .watch-content p {
+    color: white;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+}
+
+.watch .box {
+    background-color: transparent;
+    height: 400px;
+    width: 600px;
+}
+
+/* Kids Section Styling */
+.kids {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+}
+
+.kids .kids-content {
+    width: 600px;
+}
+
+.kids .kids-content h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 48px;
+}
+
+.kids .kids-content p {
+    color: white;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+}
+
+.kids .kids-content img {
+    color: white;
+    height: 400px;
+    width: 600px;
+}
+
+/* Responsive Side Queries */
+@media screen and (max-width: 480px) {
+
+    body {
+        width: fit-content;
+    }
+    
+    nav {
+        width: 90%; /* Ensure it spans the full width */
+        padding: 30px 0px; /* Adjust padding for smaller screens */
+    }
+
+    /* .hero {
+        width: 100%;
+    } */
+
+    /* .seperation{
+        width: 100%;
+    } */
+
+    .hero> :first-child {
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 20px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .enjoy {
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .download {
+        flex-direction: column-reverse;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .watch {
+        flex-direction: column;
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .watch .box {
+        width: 0px;
+        height: 0px;
+    }
+
+    .kids {
+        flex-direction: column-reverse;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 14</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .container {
+            width: 100%;
+            height: fit-content;
+            background-color: rgb(76, 75, 75);
+            display: flex;
+            /* opacity: 0.7; */
+            z-index: 0;
+        }
+
+        img {
+            position: relative;
+            width: 300px;
+            height: 195px;
+            background-color: aquamarine;
+            margin: 20px;
+            border-radius: 10px;
+            margin-right: 40px;
+            margin-left: 40px;
+            opacity: 1.5;
+        }
+
+        /* .container .content {
+            padding-top: 15px;
+
+        } */
+
+        .container .content .title h1 {
+
+            font-size: 25px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+
+        .container .content .channel h3 {
+            font-size: 18px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .container .content .count h5 {
+            /* z-index: 1.5; */
+            font-size: 18px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .container .content .duration h5 {
+            /* z-index: 1.5; */
+            font-size: 18px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+        }
+
+        .container .content_line {
+            display: flex;
+            align-items: center;
+            /* Align items vertically */
+            gap: 20px;
+            /* Adjust gap between the items */
+            margin-top: -30px;
+        }
+
+
+        .container p {
+            position: absolute;
+            color: white;
+            background-color: black;
+            padding: 2px 6px;
+            border-radius: 3px;
+            bottom: 25px;
+            right: 50px;
+
+        }
+
+        .container>div {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <img src="Image_created_with_a_mobile_phone.png" alt="" srcset="">
+            <p id="duration">32:32</p>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1 id="h1">Web Video # 2</h1>
+            </div>
+            <div class="content_line">
+                <div class="channel">
+                    <h3 id="channel">Code With Alvi</h3>
+                </div>
+                <div class="count">
+                    <h5 id="count">233K</h5>
+                </div>
+                <div class="duration">
+                    <h5 id="monthsOld">2months</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /* Child Selectors */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendent Selectors */
+
+        div > article > p {
+            color: blue;
+            background-color: green;
+        }
+
+
+        /* Pseudo Selector */
+        a:visited{
+            color: burlywood;
+        }
+
+        a:active{
+            background-color: cadetblue;
+        }
+
+        a:hover{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <p>This is class green.</p>
+    </div>
+
+    <div>
+        <article>
+            <p>This is class red.</p>
+        </article>
+    </div>
+
+    <div>
+        <a href="http://www.google.com">Go to GOOGLE</a>
+    </div>
+</body>
+</html>

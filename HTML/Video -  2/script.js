@@ -1,0 +1,1 @@
+alert("Welcome to this Web Development Course. INSHALLAH I will finish this course with great Expertise and very quickly.")

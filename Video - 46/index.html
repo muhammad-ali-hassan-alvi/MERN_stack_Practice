@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+
+    <style>
+        .container{
+            background-color: aqua;
+            width: 80vw;
+            height: 40vh;
+        }
+
+        .box{
+            background-color: antiquewhite;
+            height: 45px;
+            width: 34px;
+            animation-name: AlikaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes AlikaAnimation {
+            from{
+                
+                transform: translateX(100px);
+
+            }
+            to{
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
